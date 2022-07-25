@@ -1,0 +1,18 @@
+{
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Update Daily Template.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
+}

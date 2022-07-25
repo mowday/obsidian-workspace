@@ -1,0 +1,9 @@
+{
+  "attachmentFolderPath": "./",
+  "showUnsupportedFiles": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "00-09 - Meta/"
+  ]
+}

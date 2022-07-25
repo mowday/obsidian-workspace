@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Atom",
+  "theme": "obsidian",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "supercharged-links-gen"
+  ]
+}

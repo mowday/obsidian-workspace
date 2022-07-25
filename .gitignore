@@ -1,0 +1,5 @@
+**/*
+!00-09 - Meta/**/*
+**/.DS_Store
+!.obsidian
+Main.md

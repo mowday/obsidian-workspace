@@ -1,0 +1,33 @@
+{
+  "command_timeout": 20,
+  "templates_folder": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates",
+  "templates_pairs": [
+    [
+      "getCalenderEvents",
+      "\"00-09 - Meta/01 - Helpers/01.03 - Executables/CalendarEvents.js\" $startDate $days $calendars"
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "00-09 - Meta/01 - Helpers/01.02 - Scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Meeting Notes",
+      "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Meeting Template.md"
+    },
+    {
+      "folder": "Journal",
+      "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Periodic Note Switcher Template.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Update Daily Template.md"
+  ],
+  "startup_templates": [
+    ""
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "logPrefix": "- ",
+  "useTimestamp": true,
+  "alwaysOpenInNewLeaf": false,
+  "inboxFilePath": "Journal",
+  "newDraftFilenameTemplate": "YYYYMMDDHHmmss",
+  "targetHeader": "Notes",
+  "timestampFormat": "HH:mm - "
+}
