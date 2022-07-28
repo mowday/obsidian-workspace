@@ -1,16 +1,18 @@
-# <% moment(tp.file.title).format('dddd, MMMM Do YYYY') %>
+# <% moment(tp.file.title, tp.user.config().dailyFormat).format('dddd, MMMM Do YYYY') %>
 <%*
-const date = moment(tp.file.title)
+const date = moment(tp.file.title, tp.user.config().dailyFormat)
 const month = date.format('MMMM')
+const week = date.format('ww')
 const quarter = date.quarter()
 
-const quarterLink = date.format('YYYY-[Q]Q')
+const quarterLink = date.format(tp.user.config().quarterlyFormat)
 const monthLink = date.format('YYYY-MM')
+const weekLink = date.format(tp.user.config().weeklyFormat)
 -%>
-[[<% tp.user.lastJournalDate(tp, 14, tp.file.title) %>|«]] [[<% quarterLink %>|Q<% quarter %>]]-[[<% monthLink %>|<% month %>]] [[<% tp.user.nextJournalDate(tp, 14, tp.file.title) %>|»]]
+[[<% tp.user.lastJournalDate(tp, 14, tp.file.title) %>|«]] [[<% quarterLink %>|Q<% quarter %>]]-[[<% weekLink %>|W<% week %>]] [[<% tp.user.nextJournalDate(tp, 14, tp.file.title) %>|»]]
 
-## Monthly goal
-![[<% monthLink %>#Goals]]
+## Weekly initiatives
+![[<% weekLink %>#Initiatives]]
 
 ## Todo
 <% tp.file.cursor() %>

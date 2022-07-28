@@ -120,9 +120,17 @@
                 "file": "Main.md"
               }
             }
+          },
+          {
+            "id": "a184e89dca79bd36",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -130,5 +138,16 @@
     "collapsed": true
   },
   "active": "ce432a948eda23f6",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Journal/2022-07-29.md",
+    "Journal/2022-W30.md",
+    "Main.md",
+    "Journal/20220728145516.md",
+    "Journal/2022-07-28.md",
+    "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Verify Setup.md",
+    "00-09 - Meta/01 - Helpers/01.02 - Scripts/verifySetup.md",
+    "Journal/2022-Q3.md",
+    "Untitled.md",
+    "Journal/2022-W29.md"
+  ]
 }

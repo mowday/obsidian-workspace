@@ -10,18 +10,19 @@
   },
   "weekly": {
     "format": "",
-    "template": "",
-    "folder": ""
+    "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Weekly Template.md",
+    "folder": "Journal",
+    "enabled": true
   },
   "monthly": {
     "format": "",
     "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Monthly Template.md",
     "folder": "Journal",
-    "enabled": true
+    "enabled": false
   },
   "quarterly": {
     "format": "",
-    "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Quartely Template.md",
+    "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Quarterly Template.md",
     "folder": "Journal",
     "enabled": true
   },

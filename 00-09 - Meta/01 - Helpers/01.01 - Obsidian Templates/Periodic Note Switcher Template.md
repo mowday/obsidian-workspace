@@ -4,17 +4,17 @@ This template simply switches to the correct template based on the filename. It'
 */
 
 const daily = /^\d{4}-\d{2}-\d{2}$/
-const monthly = /^\d{4}-\d{2}$/
+const weekly = /^\d{4}-W\d{2}$/
 const quartely = /^\d{4}-Q\d$/
 const folder = tp.file.folder()
 
 if (daily.test(tp.file.title)) {
   console.log('Daily note, including template')
   return tp.file.include('[[Daily Template]]')
-} else if (monthly.test(tp.file.title)) {
-  return tp.file.include('[[Monthly Template]]')
+} else if (weekly.test(tp.file.title)) {
+  return tp.file.include('[[Weekly Template]]')
 } else if (quartely.test(tp.file.title)) {
-  return tp.file.include('[[Quartely Template]]')
+  return tp.file.include('[[Quarterly Template]]')
 } else {
   // We ignore this, not a filename that is supported
 }

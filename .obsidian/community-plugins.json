@@ -1,10 +1,11 @@
 [
   "nldates-obsidian",
-  "periodic-notes",
   "obsidian-rollover-daily-todos",
   "obsidian-style-settings",
   "supercharged-links-obsidian",
   "templater-obsidian",
   "auto-note-mover",
-  "lumberjack-obsidian"
+  "lumberjack-obsidian",
+  "calendar",
+  "periodic-notes"
 ]

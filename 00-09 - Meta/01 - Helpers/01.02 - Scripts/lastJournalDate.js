@@ -1,20 +1,28 @@
 async function lastJournalDate(tp, numberOfDays=14, startDate=undefined) {
-  let date = new Date(startDate)
+  let date = moment(startDate, tp.user.config().dailyFormat)
 
   for(let i = 0; i < numberOfDays; i++) {
-    date.setDate(date.getDate() - 1)
-    const filename = date.toLocaleDateString()
+    date.subtract(1, 'd')
+    const filename = date.format(tp.user.config().dailyFormat)
     if (await tp.file.exists(filename)) {
-      return filename;
+      return filename
     }
   }
 
-  // If a previous date wasn't found within the
+  // If a last date wasn't found within the
   // specified amount of number of days back in time
-  // we default to the day before
-  date = new Date(startDate);
-  date.setDate(date.getDate() - 1)
-  return date.toLocaleDateString()
+  // we default to the day before the start date
+  date = new moment(startDate, tp.user.config().dailyFormat)
+  date.subtract(1, 'd')
+
+  if (tp.user.config().skipWeekends) {
+    while(date.day() === 0 || date.day() === 6) {
+      // If it's a Saturday or Sunday we move to the previous day until Friday
+      date.subtract(1, 'd')
+    }
+  }
+
+  return date.format(tp.user.config().dailyFormat)
 }
 
 module.exports = lastJournalDate;
