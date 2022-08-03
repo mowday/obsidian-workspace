@@ -1,0 +1,12 @@
+.side-dock-ribbon,
+.side-dock-ribbon.is-collapsed {
+  background-color: #5F75EA;
+  color: white;
+  border-top: none;
+}
+
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action,
+.workspace-ribbon-collapse-btn {
+  color: white;
+}

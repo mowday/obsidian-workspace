@@ -3,6 +3,7 @@
   "theme": "obsidian",
   "translucency": false,
   "enabledCssSnippets": [
-    "supercharged-links-gen"
+    "supercharged-links-gen",
+    "mowday"
   ]
 }
