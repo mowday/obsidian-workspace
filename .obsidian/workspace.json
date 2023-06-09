@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "36954cf3eeead9a3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Meeting Notes/2022-10-14 - Svenska Kyrkan.md",
-            "mode": "source",
-            "source": false
+        "id": "94248d26941c89e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d51b47e5ea14ea2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Main.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -40,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#meeting",
+                "query": "svenska spel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,12 +64,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "71353b0cba0eb247",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 451.0124969482422
   },
   "right": {
     "id": "fca49941fd8133bc",
@@ -77,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meeting Notes/2022-10-14 - Svenska Kyrkan.md",
+                "file": "Main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meeting Notes/2022-10-14 - Svenska Kyrkan.md",
+                "file": "Main.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meeting Notes/2022-10-14 - Svenska Kyrkan.md"
+                "file": "Main.md"
               }
             }
           },
@@ -135,7 +151,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Meeting Notes/2022-10-14 - Svenska Kyrkan.md",
+                "file": "Main.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,26 +179,71 @@
                 }
               }
             }
+          },
+          {
+            "id": "1b3b763fd91252a2",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 573.5,
+    "width": 392.5,
     "collapsed": true
   },
-  "active": "36954cf3eeead9a3",
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "8d51b47e5ea14ea2",
   "lastOpenFiles": [
-    "Journal/2022-10-14.md",
-    "10-19 Administration and Management/12 - Documents/12.01 - Drafts/2022-10-13 - Security Day Epost.md",
-    "Uppföljning - Nordlo.md",
-    "Meeting Notes/2022-10-14 - Svenska Kyrkan.md",
-    "Journal/2022-10-06.md",
-    "Meeting Notes/2022-10-06 - One-on-one.md",
-    "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Agenda Template.md",
-    "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Daily Template.md",
-    "Journal/2022-10-05.md",
-    "Journal/2022-10-04.md"
+    "Index.md",
+    "Code Scene.md",
+    "Meeting Notes/2023-05-16 - ISO27001 och HRM.md",
+    "Very high (4)High (3)Medium (2)Low (1).md",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/~$knisk- och yrkesmässigkapacitet.docx",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/Teknisk- och yrkesmässigkapacitet.docx",
+    "Meeting Notes/2023-05-08 - Medarbetarsamtal - Niklas Gärdebrand.md",
+    "Journal/2023-05-16.md",
+    "Journal/2023-05-08.md",
+    "Meeting Notes/2023-05-08 - Medarbetarsamtal - Patrik Svensson.md",
+    "Meeting Notes/2023-05-08 - Medarbetarsamtal - Stefan Jonasson.md",
+    "10-19 Administration and Management/10 - People/10.01 - Stefan Jonasson/Stefan Jonasson.md",
+    "Meeting Notes/2022-12-22 - One-on-one - Jonas Nilsson.md",
+    "Meeting Notes/2023-05-05 - Medarbetarsamtal - Jonas Nilsson.md",
+    "10-19 Administration and Management/10 - People/10.05 - Jonas Nilsson/Jonas Nilsson.md",
+    "Meeting Notes/2022-09-29 - 10.05 - One-on-one.md",
+    "Journal/2023-05-05.md",
+    "Meeting Notes/2023-05-05 - Medarbetarsamtal - Robin Bergström.md",
+    "Meeting Notes/2023-05-05 - Medarbetarsamtal - Nicklas Franzén.md",
+    "Meeting Notes/2023-05-04 - Arkitektforum.md",
+    "Journal/2023-05-04.md",
+    "Meeting Notes/2023-03-15 - Löneupphandling - HRM, Information security.md",
+    "10-19 Administration and Management/10 - People/10.04 - Robin Bergström/Robin Bergström.md",
+    "10-19 Administration and Management/10 - People/10.02 - Nicklas Franzén/Nicklas Franzén.md",
+    "Journal/2023-04-26.md",
+    "Journal/2023-05-09.md",
+    "10-19 Administration and Management/10 - People/10.03 - Niklas Gärdebrand/Niklas Gärdebrand.md",
+    "10-19 Administration and Management/10 - People/10.06 - Patrik Svensson/Patrik Svensson.md",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/2023-04-24 - CAIQ Lite Sandvik.xlsx",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/CAIQ-Lite April 7 2020.xlsx",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/~$CAIQ-Lite April 7 2020.tmp",
+    "Meeting Notes/2023-04-24 - CAIQ Lite Sandvik.xlsx",
+    "10-19 Administration and Management/12 - Documents/12.03 - Documents/2023-04-18 - CAIQ Sandvik.xlsx",
+    "Meeting Notes/2023-04-18 - CAIQ Sandvik.xlsx",
+    "10-19 Administration and Management/2023-04-18 - CAIQ Sandvik.xlsx",
+    "Meeting Notes/2023-04-18 - CAIQ Sandvik.xlsx"
   ]
 }

@@ -123,6 +123,7 @@ function run(argv) {
 		notes = notes ? notes : ''
 		location = location ? location : ''
 
+
 		events.push({
 			uid: ObjC.unwrap(event.eventIdentifier),
 			title: title,

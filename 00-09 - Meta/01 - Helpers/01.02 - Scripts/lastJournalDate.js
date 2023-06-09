@@ -3,7 +3,7 @@ async function lastJournalDate(tp, numberOfDays=14, startDate=undefined) {
 
   for(let i = 0; i < numberOfDays; i++) {
     date.subtract(1, 'd')
-    const filename = date.format(tp.user.config().dailyFormat)
+    const filename = tp.user.config().folder + '/' + date.format(tp.user.config().dailyFormat) + '.md'
     if (await tp.file.exists(filename)) {
       return filename
     }
@@ -19,6 +19,7 @@ async function lastJournalDate(tp, numberOfDays=14, startDate=undefined) {
     while(date.day() === 0 || date.day() === 6) {
       // If it's a Saturday or Sunday we move to the previous day until Friday
       date.subtract(1, 'd')
+      console.log('going back one day weekend', date)
     }
   }
 

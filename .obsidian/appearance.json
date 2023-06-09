@@ -5,5 +5,7 @@
   "enabledCssSnippets": [
     "supercharged-links-gen",
     "mowday"
-  ]
+  ],
+  "baseFontSize": 22,
+  "accentColor": ""
 }

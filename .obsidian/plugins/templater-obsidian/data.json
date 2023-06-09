@@ -21,6 +21,10 @@
     {
       "folder": "Journal",
       "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Periodic Note Switcher Template.md"
+    },
+    {
+      "folder": "20-29 - Projects",
+      "template": "00-09 - Meta/01 - Helpers/01.01 - Obsidian Templates/Project Template.md"
     }
   ],
   "syntax_highlighting": true,
@@ -29,5 +33,6 @@
   ],
   "startup_templates": [
     ""
-  ]
+  ],
+  "enable_ribbon_icon": true
 }

@@ -1,9 +1,17 @@
 {
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "00-09 - Meta/02 - Attachments",
   "showUnsupportedFiles": true,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "userIgnoreFilters": [
     "00-09 - Meta/"
-  ]
+  ],
+  "spellcheck": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showInlineTitle": false
 }

@@ -19,7 +19,7 @@ async function getMeetingEvents(tp, startDate, days = 1, calendars = []) {
         checkmark = 'm'
       }
 
-      return `- [${checkmark}] ${start}-${end} - [[${cleanupTitle(link)}|${event.title}]] ${getVideoMeetingLink(event.notes)}`
+      return `- ${start}-${end} - [[${cleanupTitle(link)}|${event.title}]] ${getVideoMeetingLink(event.notes)}`
     })
     .join('\n')
 }
@@ -30,13 +30,20 @@ function cleanupTitle(title) {
 }
 
 const reTeams = /<(https:\/\/teams.microsoft.com\/l\/meetup-join\/.*?)>/
+const secureOutlookLinks = /<(https:\/\/\w+.safelinks.protection.outlook.com\/.*?)[&?]url=(.*?)[&>]/
 function getVideoMeetingLink(notes) {
   let match;
+  if ((match = secureOutlookLinks.exec(notes))) {
+    // Secure links, use the decoded URI from there instead
+    notes = '<' + decodeURIComponent(match[2]) + '>'
+  }
+
+  console.log(notes, reTeams.exec(notes))
   if((match = reTeams.exec(notes))) {
     return `([Teams call](${match[1]}))`
-  } else {
-    return ''
   }
+  
+  return ''
 }
 
 module.exports = getMeetingEvents

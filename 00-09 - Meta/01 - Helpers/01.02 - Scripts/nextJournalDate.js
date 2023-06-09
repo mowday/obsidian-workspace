@@ -4,7 +4,7 @@ async function nextJournalDate(tp, numberOfDays=14, startDate=undefined) {
 
   for(let i = 0; i < numberOfDays; i++) {
     date.add(1, 'd')
-    const filename = date.format(tp.user.config().dailyFormat)
+    const filename = tp.user.config().folder + '/' + date.format(tp.user.config().dailyFormat) + '.md'
     if (await tp.file.exists(filename)) {
       return filename
     }

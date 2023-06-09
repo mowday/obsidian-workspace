@@ -23,7 +23,12 @@ const config = {
     
   // This will force the previous and next links in the daily
   // notes to skip over weekends
-  skipWeekends: false
+  skipWeekends: true,
+
+  // The folder to look for all the files.  If this is set to "undefined" it will try to
+  // pull the value from the periodic-note plugin settings
+  // plugin if it's available, or default to `Journal`
+  folder: undefined,
 }
 
 
@@ -52,6 +57,14 @@ if (!config.quarterlyFormat) {
     config.quarterlyFormat = app.plugins.plugins['periodic-notes'].settings.quarterly.format || 'yyyy-[Q]Q'
   } else {
     config.quarterlyFormat = 'yyyy-[Q]Q'
+  }
+}
+
+if (!config.folder) {
+  if(app.plugins.plugins['periodic-notes']) {
+    config.folder = app.plugins.plugins['periodic-notes'].settings.daily.folder || '/Journal'
+  } else {
+    config.folder = '/Journal'
   }
 }
 

@@ -26,13 +26,16 @@
     {
       "folder": "Meeting Notes",
       "tag": "",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2} - .+"
+      "pattern": "^\\d{4}-\\d{2}-\\d{2} - .+$"
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,
   "excluded_folder": [
     {
-      "folder": ""
+      "folder": "10-19 Administration and Management/12 - Documents/"
+    },
+    {
+      "folder": "00-09 - Meta/02 - Attachments"
     }
   ]
 }

@@ -11,12 +11,17 @@ const weekLink = date.format(tp.user.config().weeklyFormat)
 -%>
 [[<% tp.user.lastJournalDate(tp, 14, tp.file.title) %>|«]] [[<% quarterLink %>|Q<% quarter %>]]-[[<% weekLink %>|W<% week %>]] [[<% tp.user.nextJournalDate(tp, 14, tp.file.title) %>|»]]
 
-## Weekly initiatives
-![[<% weekLink %>#Initiatives]]
+## Agenda 
+<% tp.file.include('[[Agenda Template]]') %>
+
+## Aktiva projekt
+```dataview
+LIST
+FROM "20-29 - Projects/20 - Active Projects"
+```
 
 ## Todo
 <% tp.file.cursor() %>
-<% tp.file.include('[[Agenda Template]]') %>
 
 ## Notes
 [Add a new log](obsidian://log)

@@ -5,7 +5,7 @@ const title = split.join(' - ')
 const event = await tp.user.getSpecificMeeting(tp, date, title, tp.user.config().whitelistedCalendars)
 -%>
 # <% title %>
-#meeting [[<% date %>]]
+#meeting [[<% date %>]] <% event.startTime %>-<% event.endTime %>
 <%-* if (event.videoMeetingLink) { tR += `\n${event.videoMeetingLink}` }%>
 
 ## Invitation

@@ -7,7 +7,7 @@ const month = date.format('MMMM')
 let weekDays = []
 for(let i=0; i<7; i++) {
   let day = moment(date).day(i+1)
-  weekDays.push(`[[${day.format(tp.user.config().dailyFormat)}|${day.format('ddd')}]]`)
+  weekDays.push(`[[${day.format(tp.user.config().dailyFormat)}|${day.format('ddd (Do)')}]]`)
 }
 _%>
 # Week <% date.week() %>, [[<% quarterLink %>|Q<% quarter %> of <% date.year() %>]]
